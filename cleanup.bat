@@ -25,11 +25,12 @@ del "%APPDATA%\Autodesk\Autodesk Desktop App\AutodeskDesktopApp"
 del "%LOCALAPPDATA%\Autodesk\Web Services\LoginState.xml"
 
 echo "removing registry entries"
-echo "...press enter to continue"
+echo "You will be prompted to import a registry file"
 pause
 start registryclean.reg
 
-echo "This will start a browser to download the Autodesk desktop app"
-echo "...press enter to continue, and proceed to reinstall"
+pause 
+echo "This will start a browser to download the Autodesk desktop app install"
+pause
 start https://emsfs.autodesk.com/utility/adskapp/landing/files/AdskappBootstrap/Autodesk_Desktop_App_Bootstrap.exe
 
